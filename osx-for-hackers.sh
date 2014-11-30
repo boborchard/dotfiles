@@ -29,8 +29,9 @@ defaults write com.apple.systemuiserver menuExtras -array \
   "/System/Library/CoreServices/Menu Extras/AirPort.menu" \
   "/System/Library/CoreServices/Menu Extras/Battery.menu" \
   "/System/Library/CoreServices/Menu Extras/Clock.menu"
- 
-sudo chmod 600 /System/Library/CoreServices/Search.bundle/Contents/MacOS/Search
+
+# Don't disable Spotlight - Yosemite's update works well for a quick-launcher
+#sudo chmod 600 /System/Library/CoreServices/Search.bundle/Contents/MacOS/Search
  
 echo ""
 echo "Disabling OS X Gate Keeper"
